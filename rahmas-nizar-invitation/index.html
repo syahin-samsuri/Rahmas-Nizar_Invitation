@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbf6f2">
+  <meta name="description" content="Jemputan Walimatul Urus Rahmas binti Razak dan Muhammad Nizar bin Subakir, 27 Disember 2026 di Jementah, Johor.">
+  <title>Rahmas &amp; Nizar — Walimatul Urus</title>
+  <link rel="icon" type="image/svg+xml" href="./wedding-mark.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #fbf6f2;
+      --paper-deep: #f4e9e9;
+      --rose-wash: #f4dfe7;
+      --rose: #b6517d;
+      --rose-dark: #923b64;
+      --plum: #632b4b;
+      --ink: #30252c;
+      --muted: #746771;
+      --line: #e8d4dc;
+      --gold: #b99769;
+      --white: #fffdfb;
+      --serif: "Playfair Display", Georgia, serif;
+      --sans: "DM Sans", Arial, sans-serif;
+      --script: "Great Vibes", cursive;
+      --shadow: 0 24px 70px rgba(90, 43, 67, .10);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse at 10% 8%, rgba(241, 212, 224, .56), transparent 31rem),
+        radial-gradient(ellipse at 94% 40%, rgba(241, 224, 215, .42), transparent 28rem),
+        var(--paper);
+      font-family: var(--sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    button, input, select { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
+      outline: 3px solid rgba(182, 81, 125, .42);
+      outline-offset: 3px;
+    }
+    .page-shell { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+    .ornament-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 26px 0 18px;
+    }
+    .brand-mark { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .brand-monogram {
+      width: 44px; height: 44px; display: grid; place-items: center;
+      border: 1px solid var(--rose); border-radius: 50%; color: var(--rose-dark);
+      font: 500 17px var(--serif); letter-spacing: -.08em;
+      background: rgba(255, 253, 251, .6);
+    }
+    .brand-copy { line-height: 1.25; }
+    .brand-copy strong { display: block; color: var(--plum); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; }
+    .brand-copy span { display: block; color: var(--muted); font-size: 11px; letter-spacing: .04em; margin-top: 3px; }
+    .top-actions { display: flex; gap: 10px; align-items: center; }
+    .music-toggle {
+      display: inline-flex; align-items: center; gap: 9px; min-height: 44px;
+      padding: 0 15px; border: 1px solid var(--line); border-radius: 999px;
+      color: var(--plum); background: rgba(255, 253, 251, .8); cursor: pointer;
+      font-size: 12px; font-weight: 700; transition: .2s ease;
+    }
+    .music-toggle:hover { border-color: var(--rose); background: var(--white); transform: translateY(-1px); }
+    .music-icon { display: grid; place-items: center; width: 21px; height: 21px; color: var(--rose); }
+    .music-icon svg { width: 18px; height: 18px; }
+
+    .hero {
+      position: relative; display: grid; grid-template-columns: .9fr 1.1fr;
+      align-items: stretch; min-height: 560px; overflow: hidden;
+      border: 1px solid rgba(182, 81, 125, .2); border-radius: 4px 4px 120px 4px;
+      background: rgba(255, 253, 251, .72); box-shadow: var(--shadow);
+      isolation: isolate;
+    }
+    .hero::before, .hero::after { content: ""; position: absolute; z-index: -1; pointer-events: none; }
+    .hero::before {
+      inset: 10px; border: 1px solid rgba(185, 151, 105, .35); border-radius: 2px 2px 112px 2px;
+    }
+    .hero::after {
+      width: 340px; height: 340px; right: -88px; top: -74px;
+      background: radial-gradient(circle, rgba(243, 218, 229, .65), rgba(243, 218, 229, 0) 68%);
+    }
+    .floral { position: absolute; width: 230px; height: 260px; color: #ce89a7; opacity: .42; pointer-events: none; z-index: -1; }
+    .floral--top { right: 5px; top: -8px; transform: rotate(2deg); }
+    .floral--bottom { width: 250px; height: 280px; left: -36px; bottom: -52px; transform: rotate(178deg); opacity: .34; }
+    .floral path, .floral ellipse, .floral circle { vector-effect: non-scaling-stroke; }
+    .hero-art {
+      position: relative; display: flex; align-items: center; justify-content: center;
+      min-height: 490px; padding: 48px 42px;
+    }
+    .invitation-panel {
+      position: relative; width: min(100%, 350px); min-height: 420px;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      padding: 44px 30px 38px; text-align: center;
+      background: rgba(255,255,255,.72); border: 0; isolation: isolate;
+    }
+    .invitation-panel::before, .invitation-panel::after { content: ""; position: absolute; pointer-events: none; clip-path: polygon(50% 0, 100% 22%, 100% 78%, 50% 100%, 0 78%, 0 22%); }
+    .invitation-panel::before { inset: 0; z-index: -2; border: 1px solid rgba(99,43,75,.46); }
+    .invitation-panel::after { inset: 8px; z-index: -1; border: 1px solid rgba(185,151,105,.55); }
+    .small-caps { color: var(--rose-dark); font-size: 10px; font-weight: 700; letter-spacing: .27em; text-transform: uppercase; }
+    .script-heading { margin: 11px 0 2px; color: var(--rose-dark); font: 400 clamp(40px, 5vw, 56px)/1.1 var(--script); }
+    .hero-monogram { margin: 8px 0 0; color: #2b2028; font: 500 clamp(80px, 11vw, 112px)/.98 var(--serif); letter-spacing: -.09em; }
+    .couple-short { margin: 8px 0 0; color: var(--muted); font: 400 21px var(--serif); }
+    .couple-short span { color: var(--rose); font-style: italic; }
+    .panel-rule { width: 68px; height: 1px; margin: 25px 0 18px; background: var(--gold); }
+    .panel-date { display: flex; align-items: stretch; width: 100%; justify-content: center; }
+    .panel-date > span { padding: 0 13px; color: var(--muted); font: 400 15px/1.2 var(--serif); }
+    .panel-date > span + span { border-left: 1px solid var(--line); }
+    .panel-date b { display: block; color: var(--ink); font: 600 21px/1.1 var(--sans); }
+    .panel-date .day { color: var(--rose-dark); font-size: 27px; }
+    .panel-place { max-width: 240px; margin: 19px 0 0; color: var(--muted); font-size: 12px; line-height: 1.45; }
+    .hero-copy { position: relative; display: flex; flex-direction: column; justify-content: center; padding: 76px 64px 72px 34px; }
+    .eyebrow { display: flex; align-items: center; gap: 12px; color: var(--rose-dark); font-size: 10px; font-weight: 700; letter-spacing: .23em; text-transform: uppercase; }
+    .eyebrow::before { content: ""; width: 26px; height: 1px; background: var(--gold); }
+    .hero-copy h1 { margin: 18px 0 7px; color: var(--plum); font: 500 clamp(37px, 4vw, 52px)/1.06 var(--serif); letter-spacing: -.035em; }
+    .ampersand { color: var(--rose); font-style: italic; }
+    .hero-copy .subtitle { margin: 0; color: var(--muted); font: italic 500 16px var(--serif); }
+    .invite-text { max-width: 490px; margin: 30px 0 21px; color: #54464f; font-size: 14px; line-height: 1.9; }
+    .host-line { margin: 0; color: var(--plum); font-size: 12px; font-weight: 700; letter-spacing: .035em; }
+    .host-line + .host-line { margin-top: 5px; }
+    .hero-copy .couple-names { margin: 22px 0 0; color: var(--ink); font: 500 21px/1.45 var(--serif); }
+    .couple-connector { display: block; margin: 6px 0; color: var(--muted); font: italic 500 14px var(--serif); }
+    .hero-copy .couple-names b { display: block; color: var(--plum); font: 600 clamp(25px, 3vw, 34px)/1.25 var(--serif); }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+      min-height: 48px; padding: 0 19px; border: 1px solid transparent; border-radius: 3px;
+      font-size: 12px; font-weight: 700; letter-spacing: .015em; text-decoration: none; cursor: pointer;
+      transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+    }
+    .button:hover { transform: translateY(-2px); }
+    .button--primary { color: #fff; background: var(--rose-dark); box-shadow: 0 10px 24px rgba(146,59,100,.16); }
+    .button--primary:hover { background: var(--plum); }
+    .button--quiet { border-color: var(--line); color: var(--plum); background: rgba(255,253,251,.9); }
+    .button--quiet:hover { border-color: var(--rose); }
+    .button svg { width: 16px; height: 16px; flex: 0 0 auto; }
+
+    .section { padding: 102px 0; }
+    .section-heading { max-width: 680px; margin: 0 auto 42px; text-align: center; }
+    .section-heading .eyebrow { justify-content: center; }
+    .section-heading h2 { margin: 13px 0 9px; color: var(--plum); font: 500 clamp(32px, 4vw, 44px)/1.18 var(--serif); letter-spacing: -.025em; }
+    .section-heading p { margin: 0; color: var(--muted); font-size: 13px; }
+    .countdown-section { position: relative; padding-top: 88px; }
+    .countdown-card {
+      position: relative; overflow: hidden; max-width: 880px; margin: 0 auto;
+      padding: 47px 42px 43px; border: 1px solid rgba(182,81,125,.22);
+      background: linear-gradient(128deg, rgba(255,253,251,.94), rgba(248,231,237,.88));
+      box-shadow: 0 16px 50px rgba(90,43,67,.07); text-align: center;
+    }
+    .countdown-card::before, .countdown-card::after { content: "✦"; position: absolute; color: rgba(182,81,125,.42); font-size: 23px; }
+    .countdown-card::before { top: 20px; left: 24px; }
+    .countdown-card::after { right: 24px; bottom: 20px; }
+    .countdown-title { margin: 0 0 6px; color: var(--plum); font: 500 25px var(--serif); }
+    .countdown-date { margin: 0 0 28px; color: var(--muted); font-size: 12px; }
+    .countdown { display: flex; align-items: flex-start; justify-content: center; gap: clamp(12px, 4vw, 45px); }
+    .count-unit { min-width: 70px; }
+    .count-unit b { display: block; color: var(--rose-dark); font: 500 clamp(34px, 6vw, 54px)/1 var(--serif); font-variant-numeric: tabular-nums; }
+    .count-unit span { display: block; margin-top: 8px; color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+    .count-separator { padding-top: 2px; color: var(--gold); font: 400 31px/1 var(--serif); }
+    .countdown-message { min-height: 24px; margin: 22px 0 0; color: var(--rose-dark); font: italic 500 15px var(--serif); }
+
+    .details-section { padding-top: 26px; }
+    .details-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 58px; align-items: center; }
+    .date-note { position: relative; padding: 42px 38px; border-left: 2px solid var(--rose); background: rgba(255,253,251,.62); }
+    .date-note::after { content: ""; position: absolute; width: 72px; height: 72px; right: 18px; top: 18px; border: 1px solid rgba(185,151,105,.45); border-radius: 50%; }
+    .date-note h2 { margin: 0 0 12px; color: var(--plum); font: 500 31px/1.2 var(--serif); }
+    .date-note .gregorian { margin: 0; color: var(--ink); font: 500 22px/1.35 var(--serif); }
+    .date-note .hijri { margin: 8px 0 0; color: var(--rose-dark); font-size: 12px; font-weight: 700; letter-spacing: .09em; }
+    .date-note .place-small { margin: 28px 0 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+    .schedule { display: grid; gap: 0; }
+    .schedule-row { display: grid; grid-template-columns: 102px 1fr; gap: 22px; align-items: center; padding: 19px 0; border-bottom: 1px solid var(--line); }
+    .schedule-row:first-child { border-top: 1px solid var(--line); }
+    .schedule-time { color: var(--rose-dark); font: 500 17px/1.2 var(--serif); }
+    .schedule-label { color: var(--ink); font-size: 13px; font-weight: 700; }
+    .schedule-note { display: block; margin-top: 3px; color: var(--muted); font-size: 11px; font-weight: 400; }
+
+    .venue-section { background: linear-gradient(180deg, transparent, rgba(245,229,234,.58) 18%, rgba(245,229,234,.58) 82%, transparent); }
+    .venue-layout { display: grid; grid-template-columns: .78fr 1.22fr; gap: 44px; align-items: center; }
+    .venue-copy h2 { margin: 0 0 13px; color: var(--plum); font: 500 36px/1.15 var(--serif); }
+    .venue-copy p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.8; }
+    .venue-copy .button { margin-top: 23px; }
+    .map-frame { overflow: hidden; min-height: 350px; border: 8px solid rgba(255,253,251,.82); box-shadow: var(--shadow); background: var(--paper-deep); }
+    .map-frame iframe { display: block; width: 100%; height: 350px; border: 0; filter: saturate(.72) sepia(.08); }
+
+    .rsvp-section { padding-top: 82px; }
+    .rsvp-card { display: grid; grid-template-columns: .85fr 1.15fr; overflow: hidden; max-width: 920px; margin: 0 auto; box-shadow: var(--shadow); background: var(--white); }
+    .rsvp-aside { position: relative; display: flex; flex-direction: column; justify-content: center; padding: 50px 42px; color: white; background: var(--plum); }
+    .rsvp-aside::before { content: ""; position: absolute; inset: 13px; border: 1px solid rgba(255,255,255,.28); pointer-events: none; }
+    .rsvp-aside .eyebrow { color: #f3c8d9; }
+    .rsvp-aside h2 { position: relative; margin: 17px 0 14px; font: 500 36px/1.1 var(--serif); }
+    .rsvp-aside p { position: relative; margin: 0; color: rgba(255,255,255,.79); font-size: 13px; line-height: 1.8; }
+    .rsvp-aside .script { position: relative; margin-top: 30px; color: #f0c1d2; font: 400 35px/1.1 var(--script); }
+    .rsvp-form { display: grid; gap: 17px; padding: 43px 44px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .field { display: grid; gap: 7px; }
+    .field label { color: var(--plum); font-size: 11px; font-weight: 700; letter-spacing: .05em; }
+    .field input, .field select { width: 100%; min-height: 46px; padding: 0 12px; border: 1px solid var(--line); border-radius: 2px; color: var(--ink); background: #fffdfb; font-size: 13px; }
+    .field input::placeholder { color: #a59aa1; }
+    .form-footnote { margin: -5px 0 0; color: var(--muted); font-size: 10px; }
+    .rsvp-form .button { width: 100%; }
+    .whatsapp-note { margin: -8px 0 0; color: var(--muted); font-size: 10px; text-align: center; }
+
+    .contacts-section { padding-top: 82px; }
+    .contact-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; max-width: 1000px; margin: 0 auto; }
+    .contact-card { padding: 19px 17px; border: 1px solid var(--line); background: rgba(255,253,251,.72); text-align: center; }
+    .contact-initial { display: grid; place-items: center; width: 38px; height: 38px; margin: 0 auto 10px; border: 1px solid rgba(182,81,125,.45); border-radius: 50%; color: var(--rose-dark); font: 500 16px var(--serif); }
+    .contact-card h3 { margin: 0; color: var(--plum); font: 500 18px var(--serif); }
+    .contact-card p { margin: 4px 0 12px; color: var(--muted); font-size: 11px; }
+    .contact-links { display: flex; justify-content: center; gap: 12px; }
+    .contact-links a { color: var(--rose-dark); font-size: 10px; font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+
+    .closing { position: relative; padding: 79px 20px 66px; text-align: center; }
+    .closing .script-heading { margin: 0 0 11px; font-size: 47px; }
+    .closing p { max-width: 600px; margin: 0 auto; color: var(--muted); font: italic 500 17px/1.8 var(--serif); }
+    .closing .small-caps { display: block; margin-top: 23px; color: var(--plum); font-size: 9px; }
+    .footer { padding: 18px 0 27px; border-top: 1px solid var(--line); color: var(--muted); font-size: 10px; text-align: center; }
+    .footer strong { color: var(--plum); font-weight: 600; }
+
+    @media (max-width: 820px) {
+      .page-shell { width: min(100% - 28px, 620px); }
+      .hero { grid-template-columns: 1fr; min-height: 0; border-radius: 4px 4px 72px 4px; }
+      .hero::before { border-radius: 2px 2px 64px 2px; }
+      .hero-art { min-height: 470px; padding: 35px 24px 8px; }
+      .invitation-panel { width: min(100%, 335px); min-height: 405px; }
+      .hero-copy { padding: 38px 34px 57px; }
+      .hero-copy h1 { font-size: clamp(37px, 8vw, 48px); }
+      .floral--top { right: -23px; top: -31px; width: 190px; }
+      .floral--bottom { width: 190px; left: -40px; bottom: -57px; }
+      .details-layout, .venue-layout, .rsvp-card { grid-template-columns: 1fr; }
+      .details-layout { gap: 28px; }
+      .date-note { padding: 33px 28px; }
+      .venue-layout { gap: 27px; }
+      .venue-copy h2 { font-size: 32px; }
+      .rsvp-aside { padding: 39px 35px; }
+      .rsvp-aside h2 { font-size: 32px; }
+      .section { padding: 76px 0; }
+      .countdown-section { padding-top: 70px; }
+      .contacts-section { padding-top: 55px; }
+    }
+    @media (max-width: 520px) {
+      .page-shell { width: calc(100% - 22px); }
+      .topbar { padding: 17px 0 13px; }
+      .brand-monogram { width: 40px; height: 40px; }
+      .brand-copy strong { font-size: 10px; }
+      .brand-copy span { font-size: 10px; }
+      .music-toggle { min-height: 40px; gap: 6px; padding: 0 11px; font-size: 10px; }
+      .hero-art { min-height: 415px; padding: 24px 15px 0; }
+      .invitation-panel { min-height: 376px; padding: 38px 25px 34px; }
+      .script-heading { font-size: 47px; }
+      .hero-monogram { font-size: 89px; }
+      .panel-date > span { padding: 0 9px; font-size: 13px; }
+      .panel-date b { font-size: 18px; }
+      .panel-date .day { font-size: 24px; }
+      .hero-copy { padding: 33px 24px 48px; }
+      .hero-copy h1 { font-size: 38px; }
+      .invite-text { margin-top: 23px; font-size: 13px; }
+      .hero-copy .couple-names b { font-size: 29px; }
+      .hero-actions { display: grid; grid-template-columns: 1fr; }
+      .button { min-height: 47px; }
+      .section-heading { margin-bottom: 30px; }
+      .section-heading h2 { font-size: 33px; }
+      .countdown-card { padding: 39px 16px 35px; }
+      .count-unit { min-width: 52px; }
+      .count-unit b { font-size: 36px; }
+      .count-unit span { font-size: 8px; letter-spacing: .12em; }
+      .count-separator { font-size: 24px; }
+      .date-note::after { width: 54px; height: 54px; right: 12px; top: 12px; }
+      .schedule-row { grid-template-columns: 87px 1fr; gap: 14px; }
+      .schedule-time { font-size: 15px; }
+      .map-frame { min-height: 300px; border-width: 5px; }
+      .map-frame iframe { height: 300px; }
+      .rsvp-form { padding: 30px 23px; }
+      .form-row { grid-template-columns: 1fr; }
+      .contact-list { grid-template-columns: repeat(2, 1fr); gap: 9px; }
+      .contact-card { padding: 17px 9px; }
+      .closing { padding: 61px 10px 52px; }
+      .closing p { font-size: 15px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <svg class="ornament-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="floral-sprig" viewBox="0 0 260 300">
+      <g fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M35 286C74 228 112 178 126 103c7-37 5-65-2-92M69 235c-18-24-40-30-54-25 15 22 33 32 54 25Zm24-36c-2-28 9-46 26-52 2 23-5 42-26 52Zm22-67c-21-18-28-38-20-55 19 12 29 29 20 55Zm13-62c17-17 22-36 14-52-18 12-24 29-14 52Z"/>
+        <path d="M40 278c-3-27-16-43-34-45 0 22 10 39 34 45Zm43-63c21-13 42-13 56-1-17 16-37 21-56 1Zm22-48c-18-23-19-44-7-58 16 17 21 36 7 58Z"/>
+        <path d="M125 100c-15-14-13-31 3-43 15 13 15 30-3 43Zm3-1c18-13 33-10 41 6-15 14-31 12-41-6Z"/>
+        <path d="M158 112c-23-7-31-24-20-42 21 7 30 22 20 42Zm-1 2c6-23 23-32 42-21-7 21-23 30-42 21Z"/>
+        <path d="M193 62c-21-9-26-26-13-42 20 9 26 25 13 42Zm-1 1c8-21 25-28 43-15-9 21-25 27-43 15Z"/>
+        <path d="M165 216c20-7 37-1 42 17-19 9-36 3-42-17Zm-1 0c-13-17-10-35 7-44 12 18 9 34-7 44Z"/>
+        <path d="M216 152c-18-12-21-29-8-43 17 12 21 28 8 43Zm1 1c12-18 29-21 43-8-12 18-29 21-43 8Z"/>
+        <path d="M201 246c12-17 29-20 43-7-12 17-29 20-43 7Zm0-1c-17-12-20-29-7-43 18 12 20 29 7 43Z"/>
+        <circle cx="159" cy="111" r="7"/><circle cx="194" cy="62" r="6"/><circle cx="218" cy="152" r="6"/><circle cx="201" cy="224" r="6"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand-mark" href="#home" aria-label="Rahmas dan Nizar, ke halaman utama">
+        <span class="brand-monogram">R<span style="color:var(--gold)">&amp;</span>N</span>
+        <span class="brand-copy"><strong>Rahmas &amp; Nizar</strong><span>27 Disember 2026 · Jementah</span></span>
+      </a>
+      <div class="top-actions">
+        <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false" aria-label="Mainkan muzik latar">
+          <span class="music-icon" id="music-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M9 18V5l11-2v13" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="16" r="3" stroke="currentColor" stroke-width="1.7"/></svg>
+          </span>
+          <span id="music-label">Mainkan muzik</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <svg class="floral floral--top" viewBox="0 0 260 300" aria-hidden="true"><use href="#floral-sprig"/></svg>
+        <svg class="floral floral--bottom" viewBox="0 0 260 300" aria-hidden="true"><use href="#floral-sprig"/></svg>
+        <div class="hero-art">
+          <div class="invitation-panel">
+            <span class="small-caps">Dengan penuh kesyukuran</span>
+            <p class="script-heading">Walimatul Urus</p>
+            <div class="hero-monogram" aria-label="Rahmas dan Nizar">R<span style="color:var(--rose);font-style:italic">&amp;</span>N</div>
+            <p class="couple-short">Rahmas <span>&amp;</span> Nizar</p>
+            <div class="panel-rule"></div>
+            <div class="panel-date" aria-label="Ahad, 27 Disember 2026">
+              <span><b class="day">27</b>Disember</span>
+              <span><b>2026</b>Ahad</span>
+              <span><b>18 Rejab</b>1448H</span>
+            </div>
+            <p class="panel-place">Kampung Permatang Panjang<br>85200 Jementah, Segamat, Johor</p>
+          </div>
+        </div>
+        <div class="hero-copy">
+          <span class="eyebrow">Jemputan perkahwinan</span>
+          <h1 id="hero-title">Rahmas <span class="ampersand">&amp;</span><br>Nizar</h1>
+          <p class="subtitle">Bersama meraikan hari yang penuh bermakna</p>
+          <p class="invite-text">Dengan segala hormatnya, kami menjemput Tan Sri / Puan Sri / Dato’ / Datin / Tuan / Puan / Encik / Cik ke majlis perkahwinan puteri kami.</p>
+          <p class="host-line">RAZAK BIN LAN &amp; ZAITON BINTI ABD RAHMAN</p>
+          <p class="hero-copy couple-names">Puteri kami <b>RAHMAS BINTI RAZAK</b><span class="couple-connector">dengan pilihan hatinya</span><b>MUHAMMAD NIZAR BIN SUBAKIR</b></p>
+          <div class="hero-actions">
+            <a class="button button--primary" href="#rsvp">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.5 11.5a8.3 8.3 0 0 1-12.3 7.2L4 20l1.3-4a8.3 8.3 0 1 1 15.2-4.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 8.5c.4 2.6 2 4.2 4.7 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              Maklumkan kehadiran
+            </a>
+            <button class="button button--quiet" id="calendar-button" type="button">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M7.5 3v4M16.5 3v4M4 9.5h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              Simpan tarikh
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section countdown-section" aria-labelledby="countdown-heading">
+        <div class="section-heading">
+          <span class="eyebrow">Menuju hari bahagia</span>
+          <h2 id="countdown-heading">Hari yang dinanti</h2>
+          <p>Semoga Allah memberkati ikatan dan pertemuan kita.</p>
+        </div>
+        <div class="countdown-card">
+          <p class="countdown-title">Kira detik ke majlis</p>
+          <p class="countdown-date">Ahad, 27 Disember 2026 · Jamuan bermula 11.00 pagi</p>
+          <div class="countdown" id="countdown" role="timer" aria-label="Kiraan detik ke majlis">
+            <div class="count-unit"><b id="days">—</b><span>Hari</span></div><span class="count-separator" aria-hidden="true">:</span>
+            <div class="count-unit"><b id="hours">—</b><span>Jam</span></div><span class="count-separator" aria-hidden="true">:</span>
+            <div class="count-unit"><b id="minutes">—</b><span>Minit</span></div><span class="count-separator" aria-hidden="true">:</span>
+            <div class="count-unit"><b id="seconds">—</b><span>Saat</span></div>
+          </div>
+          <p class="countdown-message" id="countdown-message" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="section details-section" id="details" aria-labelledby="details-heading">
+        <div class="section-heading">
+          <span class="eyebrow">Catat tarikhnya</span>
+          <h2 id="details-heading">Butiran majlis</h2>
+          <p>Dengan kehadiran anda, semoga bertambah seri majlis kami.</p>
+        </div>
+        <div class="details-layout">
+          <div class="date-note">
+            <h2>Ahad yang istimewa</h2>
+            <p class="gregorian">27 Disember 2026</p>
+            <p class="hijri">18 REJAB 1448H</p>
+            <p class="place-small"><strong>Lokasi</strong><br>Kampung Permatang Panjang<br>85200 Jementah, Segamat, Johor</p>
+          </div>
+          <div class="schedule" aria-label="Atur cara majlis">
+            <div class="schedule-row"><div class="schedule-time">11.00 pagi</div><div class="schedule-label">Jamuan Makan<span class="schedule-note">Jamuan disediakan sehingga 4.00 petang</span></div></div>
+            <div class="schedule-row"><div class="schedule-time">12.00 tgh hari</div><div class="schedule-label">Ketibaan Pengantin</div></div>
+            <div class="schedule-row"><div class="schedule-time">12.30 tgh hari</div><div class="schedule-label">Sanding</div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section venue-section" id="lokasi" aria-labelledby="venue-heading">
+        <div class="venue-layout">
+          <div class="venue-copy">
+            <span class="eyebrow">Kami menanti kehadiran anda</span>
+            <h2 id="venue-heading">Temui kami di Jementah</h2>
+            <p>Kampung Permatang Panjang<br>85200 Jementah, Segamat, Johor</p>
+            <a class="button button--primary" href="https://www.google.com/maps/search/?api=1&amp;query=Kampung%20Permatang%20Panjang%2C%2085200%20Jementah%2C%20Segamat%2C%20Johor" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.6"/></svg>
+              Buka arah perjalanan
+            </a>
+          </div>
+          <div class="map-frame">
+            <iframe title="Peta Kampung Permatang Panjang, Jementah, Segamat" src="https://maps.google.com/maps?q=Kampung%20Permatang%20Panjang%2C%2085200%20Jementah%2C%20Segamat%2C%20Johor&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="section rsvp-section" id="rsvp" aria-labelledby="rsvp-heading">
+        <div class="rsvp-card">
+          <div class="rsvp-aside">
+            <span class="eyebrow">Sahkan kehadiran</span>
+            <h2 id="rsvp-heading">Sudi-sudikan<br>kehadiran</h2>
+            <p>Beritahu kami jika anda dapat bersama-sama meraikan hari istimewa ini. Mesej anda akan disediakan untuk dihantar melalui WhatsApp.</p>
+            <span class="script">Terima kasih</span>
+          </div>
+          <form class="rsvp-form" id="rsvp-form">
+            <div class="field"><label for="guest-name">Nama anda</label><input id="guest-name" name="guestName" type="text" placeholder="Masukkan nama" autocomplete="name" required></div>
+            <div class="form-row">
+              <div class="field"><label for="attendance">Kehadiran</label><select id="attendance" name="attendance"><option value="Hadir">Insya-Allah, hadir</option><option value="Tidak dapat hadir">Tidak dapat hadir</option></select></div>
+              <div class="field"><label for="guests">Bilangan tetamu</label><select id="guests" name="guests"><option value="1">1 orang</option><option value="2">2 orang</option><option value="3">3 orang</option><option value="4">4 orang</option><option value="5">5 orang</option></select></div>
+            </div>
+            <div class="field"><label for="rsvp-contact">Hantar kepada</label><select id="rsvp-contact" name="contact"><option value="rahmah">Rahmah</option><option value="mas">Mas</option><option value="nor">Nor</option><option value="zaiton">Zaiton</option></select></div>
+            <p class="form-footnote">Butiran ini hanya digunakan untuk menyediakan mesej WhatsApp pada peranti anda.</p>
+            <button class="button button--primary" type="submit">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.5 11.5a8.3 8.3 0 0 1-12.3 7.2L4 20l1.3-4a8.3 8.3 0 1 1 15.2-4.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 8.5c.4 2.6 2 4.2 4.7 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              Teruskan ke WhatsApp
+            </button>
+            <p class="whatsapp-note">WhatsApp akan dibuka dengan mesej jemputan anda.</p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section contacts-section" aria-labelledby="contacts-heading">
+        <div class="section-heading">
+          <span class="eyebrow">Turut mengundang</span>
+          <h2 id="contacts-heading">Sesi keluarga</h2>
+          <p>Hubungi keluarga kami jika memerlukan sebarang maklumat.</p>
+        </div>
+        <div class="contact-list">
+          <article class="contact-card"><span class="contact-initial" aria-hidden="true">Z</span><h3>Zaiton</h3><p>018-775214</p><div class="contact-links"><a href="tel:018775214">Telefon</a><a href="https://wa.me/6018775214" target="_blank" rel="noopener noreferrer">WhatsApp</a></div></article>
+          <article class="contact-card"><span class="contact-initial" aria-hidden="true">M</span><h3>Mas</h3><p>011-6339069</p><div class="contact-links"><a href="tel:0116339069">Telefon</a><a href="https://wa.me/60116339069" target="_blank" rel="noopener noreferrer">WhatsApp</a></div></article>
+          <article class="contact-card"><span class="contact-initial" aria-hidden="true">R</span><h3>Rahmah</h3><p>019-7526601</p><div class="contact-links"><a href="tel:0197526601">Telefon</a><a href="https://wa.me/60197526601" target="_blank" rel="noopener noreferrer">WhatsApp</a></div></article>
+          <article class="contact-card"><span class="contact-initial" aria-hidden="true">N</span><h3>Nor</h3><p>012-7240847</p><div class="contact-links"><a href="tel:0127240847">Telefon</a><a href="https://wa.me/60127240847" target="_blank" rel="noopener noreferrer">WhatsApp</a></div></article>
+        </div>
+      </section>
+
+      <section class="closing" aria-label="Ucapan penutup">
+        <p class="script-heading">Dengan ingatan tulus ikhlas</p>
+        <p>Semoga dengan kehadiran tuan dan puan menyerikan majlis kami serta diberkati Allah S.W.T. Insya-Allah. Amin.</p>
+        <span class="small-caps">Razak &amp; Zaiton sekeluarga</span>
+      </section>
+    </main>
+
+    <footer class="footer"><strong>Rahmas &amp; Nizar</strong> · Walimatul Urus · Ahad, 27 Disember 2026</footer>
+  </div>
+
+  <audio id="background-music" src="./rahmas-nizar-wedding.mp3" preload="none" loop></audio>
+  <script>
+    (() => {
+      const music = document.getElementById('background-music');
+      const musicButton = document.getElementById('music-toggle');
+      const musicLabel = document.getElementById('music-label');
+      const musicIcon = document.getElementById('music-icon');
+      const playIcon = '<svg viewBox="0 0 24 24" fill="none"><path d="m8 5 11 7-11 7V5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>';
+      const pauseIcon = '<svg viewBox="0 0 24 24" fill="none"><path d="M8 5v14M16 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
+
+      musicButton.addEventListener('click', async () => {
+        if (music.paused) {
+          try {
+            await music.play();
+            musicLabel.textContent = 'Jeda muzik';
+            musicButton.setAttribute('aria-label', 'Jeda muzik latar');
+            musicButton.setAttribute('aria-pressed', 'true');
+            musicIcon.innerHTML = pauseIcon;
+          } catch (error) {
+            musicLabel.textContent = 'Muzik tidak tersedia';
+            musicButton.setAttribute('aria-label', 'Muzik tidak dapat dimainkan');
+          }
+        } else {
+          music.pause();
+          musicLabel.textContent = 'Mainkan muzik';
+          musicButton.setAttribute('aria-label', 'Mainkan muzik latar');
+          musicButton.setAttribute('aria-pressed', 'false');
+          musicIcon.innerHTML = playIcon;
+        }
+      });
+      music.addEventListener('ended', () => {
+        musicLabel.textContent = 'Mainkan muzik';
+        musicButton.setAttribute('aria-pressed', 'false');
+        musicIcon.innerHTML = playIcon;
+      });
+
+      const targetTime = new Date('2026-12-27T11:00:00+08:00').getTime();
+      const countdownMessage = document.getElementById('countdown-message');
+      const countdownFields = {
+        days: document.getElementById('days'),
+        hours: document.getElementById('hours'),
+        minutes: document.getElementById('minutes'),
+        seconds: document.getElementById('seconds')
+      };
+      const updateCountdown = () => {
+        let remaining = targetTime - Date.now();
+        if (remaining <= 0) {
+          Object.values(countdownFields).forEach((field) => { field.textContent = '00'; });
+          countdownMessage.textContent = 'Hari yang diraikan telah tiba. Selamat meraikan!';
+          return;
+        }
+        const days = Math.floor(remaining / 86400000);
+        remaining %= 86400000;
+        const hours = Math.floor(remaining / 3600000);
+        remaining %= 3600000;
+        const minutes = Math.floor(remaining / 60000);
+        const seconds = Math.floor((remaining % 60000) / 1000);
+        countdownFields.days.textContent = String(days).padStart(2, '0');
+        countdownFields.hours.textContent = String(hours).padStart(2, '0');
+        countdownFields.minutes.textContent = String(minutes).padStart(2, '0');
+        countdownFields.seconds.textContent = String(seconds).padStart(2, '0');
+      };
+      updateCountdown();
+      window.setInterval(updateCountdown, 1000);
+
+      document.getElementById('calendar-button').addEventListener('click', () => {
+        const eventLines = [
+          'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Rahmas dan Nizar//Walimatul Urus//MS', 'CALSCALE:GREGORIAN',
+          'BEGIN:VTIMEZONE', 'TZID:Asia/Kuala_Lumpur', 'X-LIC-LOCATION:Asia/Kuala_Lumpur',
+          'BEGIN:STANDARD', 'TZOFFSETFROM:+0800', 'TZOFFSETTO:+0800', 'TZNAME:MYT', 'DTSTART:19700101T000000',
+          'END:STANDARD', 'END:VTIMEZONE',
+          'BEGIN:VEVENT', 'UID:rahmas-nizar-20261227@walimatulurus', 'DTSTAMP:20261026T000000Z',
+          'DTSTART;TZID=Asia/Kuala_Lumpur:20261227T110000', 'DTEND;TZID=Asia/Kuala_Lumpur:20261227T160000',
+          'SUMMARY:Walimatul Urus Rahmas & Nizar',
+          'DESCRIPTION:Walimatul Urus Rahmas binti Razak dan Muhammad Nizar bin Subakir. Dianjurkan oleh Razak bin Lan dan Zaiton binti Abd Rahman. Jamuan Makan 11.00 pagi hingga 4.00 petang. Ketibaan Pengantin 12.00 tengah hari. Sanding 12.30 tengah hari. 18 Rejab 1448H.',
+          'LOCATION:Kampung Permatang Panjang\\, 85200 Jementah\\, Segamat\\, Johor', 'END:VEVENT', 'END:VCALENDAR'
+        ];
+        const event = eventLines.map((line) => {
+          let folded = '';
+          for (let index = 0; index < line.length; index += 73) {
+            folded += `${index === 0 ? '' : '\r\n '}${line.slice(index, index + 73)}`;
+          }
+          return folded;
+        }).join('\r\n');
+        const blob = new Blob([event], { type: 'text/calendar;charset=utf-8' });
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = 'rahmas-nizar-walimatul-urus.ics';
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        window.setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+      });
+
+      const contacts = {
+        rahmah: { name: 'Rahmah', number: '60197526601' },
+        mas: { name: 'Mas', number: '60116339069' },
+        nor: { name: 'Nor', number: '60127240847' },
+        zaiton: { name: 'Zaiton', number: '6018775214' }
+      };
+      document.getElementById('rsvp-form').addEventListener('submit', (event) => {
+        event.preventDefault();
+        const name = document.getElementById('guest-name').value.trim();
+        if (!name) {
+          document.getElementById('guest-name').focus();
+          return;
+        }
+        const attendance = document.getElementById('attendance').value;
+        const guestCount = document.getElementById('guests').value;
+        const recipient = contacts[document.getElementById('rsvp-contact').value];
+        const message = `Assalamualaikum ${recipient.name}, saya ${name}. ${attendance} ke majlis Walimatul Urus Rahmas dan Nizar pada Ahad, 27 Disember 2026. Bilangan tetamu: ${guestCount} orang. Terima kasih.`;
+        window.location.href = `https://wa.me/${recipient.number}?text=${encodeURIComponent(message)}`;
+      });
+    })();
+  </script>
+</body>
+</html>
