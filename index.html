@@ -175,19 +175,25 @@
     .countdown-message { min-height: 24px; margin: 22px 0 0; color: var(--rose-dark); font: italic 500 15px var(--serif); }
 
     .details-section { padding-top: 26px; }
-    .details-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 58px; align-items: center; }
-    .date-note { position: relative; padding: 42px 38px; border-left: 2px solid var(--rose); background: rgba(255,253,251,.62); }
-    .date-note::after { content: ""; position: absolute; width: 72px; height: 72px; right: 18px; top: 18px; border: 1px solid rgba(185,151,105,.45); border-radius: 50%; }
-    .date-note h2 { margin: 0 0 12px; color: var(--plum); font: 500 31px/1.2 var(--serif); }
-    .date-note .gregorian { margin: 0; color: var(--ink); font: 500 22px/1.35 var(--serif); }
-    .date-note .hijri { margin: 8px 0 0; color: var(--rose-dark); font-size: 12px; font-weight: 700; letter-spacing: .09em; }
-    .date-note .place-small { margin: 28px 0 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
-    .schedule { display: grid; gap: 0; }
-    .schedule-row { display: grid; grid-template-columns: 102px 1fr; gap: 22px; align-items: center; padding: 19px 0; border-bottom: 1px solid var(--line); }
-    .schedule-row:first-child { border-top: 1px solid var(--line); }
-    .schedule-time { color: var(--rose-dark); font: 500 17px/1.2 var(--serif); }
-    .schedule-label { color: var(--ink); font-size: 13px; font-weight: 700; }
-    .schedule-note { display: block; margin-top: 3px; color: var(--muted); font-size: 11px; font-weight: 400; }
+    .details-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 42px; align-items: start; }
+    .event-summary { padding: 34px 30px; border-left: 2px solid var(--rose); background: rgba(255,253,251,.72); }
+    .event-couple { margin: 0 0 25px; color: var(--plum); font: 500 22px/1.4 var(--serif); }
+    .event-couple span { color: var(--rose); font-style: italic; }
+    .event-facts { display: grid; gap: 15px; margin: 0; }
+    .event-facts > div { padding-top: 12px; border-top: 1px solid var(--line); }
+    .event-facts dt { margin-bottom: 5px; color: var(--rose-dark); font-size: 9px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    .event-facts dd { margin: 0; color: var(--ink); font-size: 13px; line-height: 1.65; overflow-wrap: anywhere; }
+    .programme { min-width: 0; }
+    .programme-heading { margin: 0 0 16px; color: var(--plum); font: 500 28px/1.2 var(--serif); }
+    .schedule-table-wrap { overflow-x: auto; border: 1px solid var(--line); background: var(--white); box-shadow: 0 10px 28px rgba(90,43,67,.045); }
+    .programme-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+    .programme-table th, .programme-table td { padding: 12px 14px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    .programme-table thead th { color: #fff; background: var(--plum); font-size: 11px; font-weight: 700; letter-spacing: .04em; }
+    .programme-table thead th:first-child, .programme-table tbody th { width: 132px; }
+    .programme-table tbody tr:nth-child(even) td { background: #fbf7f8; }
+    .programme-table tbody th { color: var(--rose-dark); background: rgba(248,231,237,.46); font: 500 13px/1.55 var(--serif); white-space: normal; }
+    .programme-table tbody td { color: var(--ink); font-size: 13px; line-height: 1.6; overflow-wrap: anywhere; }
+    .programme-table tbody tr:last-child th, .programme-table tbody tr:last-child td { border-bottom: 0; }
 
     .venue-section { background: linear-gradient(180deg, transparent, rgba(245,229,234,.58) 18%, rgba(245,229,234,.58) 82%, transparent); }
     .venue-layout { display: grid; grid-template-columns: .78fr 1.22fr; gap: 44px; align-items: center; }
@@ -242,8 +248,8 @@
       .floral--top { right: -23px; top: -31px; width: 190px; }
       .floral--bottom { width: 190px; left: -40px; bottom: -57px; }
       .details-layout, .venue-layout, .rsvp-card { grid-template-columns: 1fr; }
-      .details-layout { gap: 28px; }
-      .date-note { padding: 33px 28px; }
+      .details-layout { gap: 30px; }
+      .event-summary { padding: 30px 26px; }
       .venue-layout { gap: 27px; }
       .venue-copy h2 { font-size: 32px; }
       .rsvp-aside { padding: 39px 35px; }
@@ -279,9 +285,14 @@
       .count-unit b { font-size: 36px; }
       .count-unit span { font-size: 8px; letter-spacing: .12em; }
       .count-separator { font-size: 24px; }
-      .date-note::after { width: 54px; height: 54px; right: 12px; top: 12px; }
-      .schedule-row { grid-template-columns: 87px 1fr; gap: 14px; }
-      .schedule-time { font-size: 15px; }
+      .event-summary { padding: 25px 20px; }
+      .event-couple { font-size: 20px; }
+      .event-facts { gap: 12px; }
+      .programme-heading { font-size: 25px; }
+      .programme-table th, .programme-table td { padding: 10px 9px; }
+      .programme-table thead th { font-size: 10px; }
+      .programme-table thead th:first-child, .programme-table tbody th { width: 108px; }
+      .programme-table tbody th, .programme-table tbody td { font-size: 11.5px; }
       .map-frame { min-height: 300px; border-width: 5px; }
       .map-frame iframe { height: 300px; }
       .rsvp-form { padding: 30px 23px; }
@@ -390,21 +401,41 @@
 
       <section class="section details-section" id="details" aria-labelledby="details-heading">
         <div class="section-heading">
-          <span class="eyebrow">Catat tarikhnya</span>
-          <h2 id="details-heading">Butiran majlis</h2>
-          <p>Dengan kehadiran anda, semoga bertambah seri majlis kami.</p>
+          <span class="eyebrow">Butiran majlis</span>
+          <h2 id="details-heading">Atur Cara Majlis Perkahwinan</h2>
+          <p>Majlis Tautan Kasih</p>
         </div>
         <div class="details-layout">
-          <div class="date-note">
-            <h2>Ahad yang istimewa</h2>
-            <p class="gregorian">27 Disember 2026</p>
-            <p class="hijri">18 REJAB 1448H</p>
-            <p class="place-small"><strong>Lokasi</strong><br>Kampung Permatang Panjang<br>85200 Jementah, Segamat, Johor</p>
+          <div class="event-summary">
+            <h3 class="event-couple">Rahmas Binti Razak <span>&amp;</span> Muhammad Nizar Bin Subakir</h3>
+            <dl class="event-facts">
+              <div><dt>Hari &amp; Tarikh</dt><dd>Ahad, 27 Disember 2026</dd></div>
+              <div><dt>Masa</dt><dd>11.00 pagi — 4.00 petang</dd></div>
+              <div><dt>Tempat</dt><dd>Kampung Permatang Panjang, 85200 Jementah, Segamat, Johor</dd></div>
+            </dl>
           </div>
-          <div class="schedule" aria-label="Atur cara majlis">
-            <div class="schedule-row"><div class="schedule-time">11.00 pagi</div><div class="schedule-label">Jamuan Makan<span class="schedule-note">Jamuan disediakan sehingga 4.00 petang</span></div></div>
-            <div class="schedule-row"><div class="schedule-time">12.00 tgh hari</div><div class="schedule-label">Ketibaan Pengantin</div></div>
-            <div class="schedule-row"><div class="schedule-time">12.30 tgh hari</div><div class="schedule-label">Sanding</div></div>
+          <div class="programme">
+            <h3 class="programme-heading" id="programme-heading">Tentatif Majlis</h3>
+            <div class="schedule-table-wrap">
+              <table class="programme-table" aria-labelledby="programme-heading">
+                <thead><tr><th scope="col">Masa</th><th scope="col">Atur cara</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">11.00 pagi</th><td>Ketibaan tetamu dan jamuan makan</td></tr>
+                  <tr><th scope="row">12.15 tengah hari</th><td>Persediaan pengantin, kumpulan kompang dan pesilat</td></tr>
+                  <tr><th scope="row">12.30 tengah hari</th><td>Perarakan pengantin perempuan diiringi kompang</td></tr>
+                  <tr><th scope="row">12.35 tengah hari</th><td>Pertemuan pengantin dan bacaan Selawat Taslim</td></tr>
+                  <tr><th scope="row">12.40 tengah hari</th><td>Persembahan silat selepas pengantin bertemu</td></tr>
+                  <tr><th scope="row">12.45 tengah hari</th><td>Iringan selawat (Raqib Mad) mengiringi pengantin menuju ke pelamin</td></tr>
+                  <tr><th scope="row">12.50 tengah hari</th><td>Acara bersanding</td></tr>
+                  <tr><th scope="row">12.55 tengah hari</th><td>Sesi bergambar bersama ibu bapa dan keluarga kedua-dua belah pihak</td></tr>
+                  <tr><th scope="row">1.25 petang</th><td>Makan damai pengantin</td></tr>
+                  <tr><th scope="row">1.45 petang</th><td>Ucapan pengantin, bacaan Surah Al-Fatihah buat arwah insan tersayang dan doa</td></tr>
+                  <tr><th scope="row">2.15 petang</th><td>Jamuan tetamu dan sesi bergambar bersama pengantin</td></tr>
+                  <tr><th scope="row">3.45 petang</th><td>Ucapan penghargaan dan penutup oleh pengacara majlis</td></tr>
+                  <tr><th scope="row">4.00 petang</th><td>Majlis bersurai</td></tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </section>
@@ -549,7 +580,7 @@
           'BEGIN:VEVENT', 'UID:rahmas-nizar-20261227@walimatulurus', 'DTSTAMP:20261026T000000Z',
           'DTSTART;TZID=Asia/Kuala_Lumpur:20261227T110000', 'DTEND;TZID=Asia/Kuala_Lumpur:20261227T160000',
           'SUMMARY:Walimatul Urus Rahmas & Nizar',
-          'DESCRIPTION:Walimatul Urus Rahmas binti Razak dan Muhammad Nizar bin Subakir. Dianjurkan oleh Razak bin Lan dan Zaiton binti Abd Rahman. Jamuan Makan 11.00 pagi hingga 4.00 petang. Ketibaan Pengantin 12.00 tengah hari. Sanding 12.30 tengah hari. 18 Rejab 1448H.',
+          'DESCRIPTION:Atur Cara Majlis Perkahwinan. Majlis Tautan Kasih. Rahmas Binti Razak dan Muhammad Nizar Bin Subakir. Dianjurkan oleh Razak bin Lan dan Zaiton binti Abd Rahman. 18 Rejab 1448H. Ahad 27 Disember 2026. Masa 11.00 pagi hingga 4.00 petang. Tempat Kampung Permatang Panjang 85200 Jementah Segamat Johor. 11.00 pagi Ketibaan tetamu dan jamuan makan. 12.15 tengah hari Persediaan pengantin kumpulan kompang dan pesilat. 12.30 tengah hari Perarakan pengantin perempuan diiringi kompang. 12.35 tengah hari Pertemuan pengantin dan bacaan Selawat Taslim. 12.40 tengah hari Persembahan silat selepas pengantin bertemu. 12.45 tengah hari Iringan selawat Raqib Mad mengiringi pengantin menuju ke pelamin. 12.50 tengah hari Acara bersanding. 12.55 tengah hari Sesi bergambar bersama ibu bapa dan keluarga kedua-dua belah pihak. 1.25 petang Makan damai pengantin. 1.45 petang Ucapan pengantin bacaan Surah Al-Fatihah buat arwah insan tersayang dan doa. 2.15 petang Jamuan tetamu dan sesi bergambar bersama pengantin. 3.45 petang Ucapan penghargaan dan penutup oleh pengacara majlis. 4.00 petang Majlis bersurai.',
           'LOCATION:Kampung Permatang Panjang\\, 85200 Jementah\\, Segamat\\, Johor', 'END:VEVENT', 'END:VCALENDAR'
         ];
         const event = eventLines.map((line) => {
